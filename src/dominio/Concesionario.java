@@ -3,13 +3,18 @@ import java.util.*;
 
 
 public class Concesionario{
-	ArrayList <VehiculoTurismo> lista  = new ArrayList<>();
+	ArrayList <Vehiculo> lista  = new ArrayList<>();
 
 	double Total = 0;
 	public void annadir(VehiculoTurismo vehiculo){
 		lista.add(vehiculo);
 
 		Total = Total + vehiculo.PrecioFinal(vehiculo.plazas);
+	}
+	public void annadirFurgoneta(Furgoneta vehiculo){
+		lista.add(vehiculo);
+
+		Total = Total + vehiculo.PrecioFinal(vehiculo.m3);
 	}
 
 	public void mostrar(){

@@ -7,11 +7,13 @@ public class Comprobacion {
         VehiculoTurismo vh1 = new VehiculoTurismo("Ford", "Focus", 10000, 5);
         VehiculoTurismo vh2 = new VehiculoTurismo("Mercedes", "Clase A", 20000, 3);
         VehiculoTurismo vh3 = new VehiculoTurismo("BMW", "Serie 1", 30000, 7);
-        Furgoneta f1 = new Furgoneta("Ford", "Transit", 20000, 10);
-        Furgoneta f2 = new Furgoneta("Mercedes", "Sprinter", 30000, 20);
+        Furgoneta f1 = new Furgoneta("Ford", "Transit", 20000, 8);
+        Furgoneta f2 = new Furgoneta("Mercedes", "Sprinter", 30000, 27);
         concesionario.annadir(vh1);
         concesionario.annadir(vh2);
         concesionario.annadir(vh3);
+        concesionario.annadirFurgoneta(f1);
+        concesionario.annadirFurgoneta(f2);
         concesionario.mostrar();
     }
 }
