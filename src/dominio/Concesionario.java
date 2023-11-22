@@ -4,11 +4,12 @@ import java.util.*;
 
 public class Concesionario{
 	ArrayList <VehiculoTurismo> lista  = new ArrayList<>();
+
 	double Total = 0;
 	public void annadir(VehiculoTurismo vehiculo){
 		lista.add(vehiculo);
 
-		Total = Total + vehiculo.PrecioFinal(vehiculo.plazas,vehiculo.precioBase);
+		Total = Total + vehiculo.PrecioFinal(vehiculo.plazas);
 	}
 
 	public void mostrar(){
@@ -18,6 +19,5 @@ public class Concesionario{
 		}
 		System.out.println("Total: "+Total);
 	}
-
 
 }
