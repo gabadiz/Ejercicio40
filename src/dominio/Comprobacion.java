@@ -4,16 +4,11 @@ package dominio;
 public class Comprobacion {
     public static void comprob() {
         Concesionario concesionario = new Concesionario();
-        VehiculoTurismo vh1 = new VehiculoTurismo("Ford", "Focus", 10000, 5);
-        VehiculoTurismo vh2 = new VehiculoTurismo("Mercedes", "Clase A", 20000, 3);
-        VehiculoTurismo vh3 = new VehiculoTurismo("BMW", "Serie 1", 30000, 7);
-        Furgoneta f1 = new Furgoneta("Ford", "Transit", 20000, 8);
-        Furgoneta f2 = new Furgoneta("Mercedes", "Sprinter", 30000, 27);
-        concesionario.annadir(vh1);
-        concesionario.annadir(vh2);
-        concesionario.annadir(vh3);
-        concesionario.annadirFurgoneta(f1);
-        concesionario.annadirFurgoneta(f2);
+
+        concesionario.annadirVehiculo(new VehiculoTurismo ("Ford", "Mustang",10000, 7));
+        concesionario.annadirVehiculo(new VehiculoTurismo("BMW","A3",20000,4));
+        concesionario.annadirVehiculo(new Furgoneta("Fiat", "Fiorno", 5000, 30));
+        concesionario.annadirVehiculo(new Furgoneta("Mercedes","Sprinter", 40000,40));
         concesionario.mostrar();
     }
 }

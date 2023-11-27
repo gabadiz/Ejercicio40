@@ -9,9 +9,9 @@ int plazas;
 		this.plazas = plazas;
 	}
 
-	public  double PrecioFinal(int plazas){
+	public double precioFinal(){
 	double precio;
-	int i=0;
+	double i=0;
 	double porcentaje = 0;
 		if (plazas > 5){
 			for (i=plazas;i>5;i--){
@@ -19,11 +19,13 @@ int plazas;
 			}
 		
 		}
-		precio = PrecioBase()*porcentaje+PrecioBase();
+		precio = getprecioBase()*porcentaje+getprecioBase();
 		return precio;
 	}
+
+
 	public String toString(){
-		return super.toString()+" Plazas: "+plazas+" Precio Final: "+PrecioFinal(plazas);
+		return super.toString()+" Plazas: "+plazas+" Precio Final: "+precioFinal();
 	}
 
 }
